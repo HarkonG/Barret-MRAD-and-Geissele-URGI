@@ -94,6 +94,9 @@
                         <aiUseBurstMode>FALSE</aiUseBurstMode>
                         <aiAimMode>AimedShot</aiAimMode>
                     </FireModes>
+                    <weaponTags>
+                        <li>Bipod_Rifle</li>
+                    </weaponTags>
                 </li>
 
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">

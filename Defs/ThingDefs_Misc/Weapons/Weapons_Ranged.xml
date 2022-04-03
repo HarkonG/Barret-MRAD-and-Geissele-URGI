@@ -3,24 +3,10 @@
 <Defs>
 
   <!--===== Geissele URG-I =====-->
-  <ThingDef ParentName="BaseBullet">
-    <defName>HRK_Bullet_GeisseleURGI</defName>
-    <label>Geissele URG-I bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <damageDef>Bullet</damageDef>
-      <damageAmountBase>11</damageAmountBase>
-      <speed>70</speed>
-    </projectile>
-  </ThingDef>
-
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HRK_GeisseleURGI</defName>
     <label>Geissele URG-I</label>
-    <description>_</description>
+    <description>URG-I (Upper Receiver Group — Improved). It was made by Geissele Automatics as a complete upper assembly and resulted from a United States Army Special Operations Command (USASOC) contract project.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_GeisseleURGI</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -28,7 +14,7 @@
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -51,7 +37,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_GeisseleURGI</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_556x45mmNATO</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>30</range>
         <burstShotCount>4</burstShotCount>
@@ -102,7 +88,7 @@
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HRK_BarretMRAD</defName>
     <label>Barret MRAD</label>
-    <description>_</description>
+    <description>The Barrett MRAD (Multi-role Adaptive Design) is a bolt-action sniper rifle designed by Barrett to meet the requirements of the SOCOM PSR.[5] The MRAD is based on the Barrett 98B and includes a number of modifications and improvements.[6] The Barrett MRAD was named the 2012 Rifle of the Year by the NRA.</description>
     <graphicData>
       <texPath>Things/Weapons/HRK_BarretMRAD</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -116,11 +102,11 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>60000</WorkToMake>
-      <Mass>8</Mass>
+      <Mass>7</Mass>
       <AccuracyTouch>0.3</AccuracyTouch>
       <AccuracyShort>0.45</AccuracyShort>
-      <AccuracyMedium>0.75</AccuracyMedium>
-      <AccuracyLong>0.92</AccuracyLong>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
       <RangedWeapon_Cooldown>2.9</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>45</equippedAngleOffset>
@@ -135,7 +121,7 @@
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
-      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
+      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
@@ -144,9 +130,9 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_BarretMRAD</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_338LapuaMagnum</defaultProjectile>
         <warmupTime>3.3</warmupTime>
-        <range>40</range>
+        <range>39</range>
         <soundCast>HRK_Shot_BarretMRAD</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
