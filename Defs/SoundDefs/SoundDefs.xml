@@ -9,8 +9,8 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/HRK_Shot_BarretMRAD</clipFolderPath>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_BarretMRAD</clipPath>
                     </li>
                 </grains>
                 <volumeRange>
@@ -34,8 +34,8 @@
         <subSounds>
             <li>
                 <grains>
-                    <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/HRK_Shot_GeisseleURGI</clipFolderPath>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_GeisseleURGI</clipPath>
                     </li>
                 </grains>
                 <volumeRange>

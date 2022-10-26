@@ -3,6 +3,23 @@
 <Defs>
 
   <!--===== Geissele URG-I =====-->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>HRK_Bullet_GeisseleURGI</defName>
+    <label>Geissele URG-I bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>11</damageAmountBase>
+      <!--<stoppingPower>0.1</stoppingPower>-->
+      <!--<armorPenetrationBase>0.1</armorPenetrationBase>-->
+      <speed>70</speed>
+    </projectile>
+  </ThingDef>
+
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HRK_GeisseleURGI</defName>
     <label>Geissele URG-I</label>
@@ -14,7 +31,7 @@
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>Interact_Rifle</soundInteract>
     <recipeMaker>
-      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
@@ -37,7 +54,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_556x45mmNATO</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_GeisseleURGI</defaultProjectile>
         <warmupTime>1.0</warmupTime>
         <range>30</range>
         <burstShotCount>4</burstShotCount>
@@ -92,13 +109,8 @@
     <graphicData>
       <texPath>Things/Weapons/HRK_BarretMRAD</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>1.25</drawSize>
+      <drawSize>1.35</drawSize>
     </graphicData>
-    <comps>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
-    </comps>
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>60000</WorkToMake>
@@ -121,7 +133,7 @@
       <recipeUsers>
         <li>TableMachining</li>
       </recipeUsers>
-      <researchPrerequisite>HRK_Research_GunNut</researchPrerequisite>
+      <researchPrerequisite>PrecisionRifling</researchPrerequisite>
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
@@ -130,7 +142,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>HRK_Bullet_338LapuaMagnum</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_BarretMRAD</defaultProjectile>
         <warmupTime>3.3</warmupTime>
         <range>39</range>
         <soundCast>HRK_Shot_BarretMRAD</soundCast>
