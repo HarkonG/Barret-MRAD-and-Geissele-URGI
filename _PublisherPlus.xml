@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Configuration>
-  <Excluded>
-    <exclude>C:\Games\Steam\steamapps\common\RimWorld\Mods\Barret-MRAD-and-Geissele-URGI\.git</exclude>
-    <exclude>C:\Games\Steam\steamapps\common\RimWorld\Mods\Barret-MRAD-and-Geissele-URGI\README.md</exclude>
-  </Excluded>
-</Configuration>
