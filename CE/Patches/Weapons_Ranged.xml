@@ -75,7 +75,7 @@
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Bullet_338Lapua_FMJ</defaultProjectile>
                     <warmupTime>3.35</warmupTime>
-                    <range>112</range>
+                    <range>87</range>
                     <soundCast>HRK_Shot_BarretMRAD</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
@@ -90,7 +90,8 @@
                     <aiAimMode>AimedShot</aiAimMode>
                 </FireModes>
                 <weaponTags>
-                    <li>Bipod_Rifle</li>
+                    <li>Bipod_AMR</li>
+                    <li>CE_AI_SR</li>
                 </weaponTags>
             </li>
 
